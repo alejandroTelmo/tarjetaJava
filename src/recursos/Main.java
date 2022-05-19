@@ -1,5 +1,7 @@
 package recursos;
 
+import test.TarjetaDebitoTest;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -16,5 +18,8 @@ public class Main {
         System.out.println(deb.procesadorDebito(deb,1500.0));
         System.out.println(deb.getSaldoDisponible());
 
+        TarjetaDebitoTest test=new TarjetaDebitoTest();
+        test.tarjetaAutorizada(1999.0);
+        test.tarjetaRechazada(1999.0);
     }
 }
